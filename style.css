@@ -1,0 +1,40 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  overflow:hidden;
+}
+canvas {
+  display: block;
+}
+button {
+  background-color: teal; 
+  border: none;
+  color: white;
+  padding: 1px 13px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 14px;
+  border-radius: 7px;
+}
+/*Code from https://www.w3schools.com/howto/howto_js_rangeslider.asp*/
+
+.sliderClass {
+    -webkit-appearance: none;  /* Override default CSS styles */
+  appearance: none;
+  width: 100%; /* Full-width */
+  height: 10px; /* Specified height */
+  background: white; /* White background */
+  outline: none; /* Remove outline */
+  opacity: 1; /* Set transparency (for mouse-over effects on hover) */
+  -webkit-transition: .2s; /* 0.2 seconds transition on hover */
+  transition: opacity 0s;
+}
+
+.sliderClass::-webkit-slider-thumb {
+  -webkit-appearance: none; /* Override default look */
+  appearance: none;
+  width: 15px; /* Set a specific slider handle width */
+  height: 15px; /* Slider handle height */
+  background: teal; /* Green background */
+  cursor: pointer; /* Cursor on hover */
